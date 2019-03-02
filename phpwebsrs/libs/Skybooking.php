@@ -1,12 +1,12 @@
 <?php
 
 /* 
- * skybookingc.php
+ * Skybooking.php
  * @author Brian.
  */
-include 'header.php';
-include 'dbconfig.php';
-include 'dbconn.php';
+include '../views/header.php';
+include '../configs/dbconfig.php';
+include '../configs/dbconn.php';
 
 if(!isset($_REQUEST['book2']))
 {
@@ -84,6 +84,6 @@ class Skybooking
     }
 }
 
-echo '<tr><td><a href="index.php">Info</a>
-         <a href="forexapitpl.php">Forex</a></td></tr>';
-include 'footer.php';
+echo '<tr><td><a href="../index.php">Info</a>
+         <a href="../views/forexapitpl.php">Forex</a></td></tr>';
+include '../views/footer.php';

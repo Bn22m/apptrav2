@@ -9,10 +9,10 @@ try
 {
     if(!$_REQUEST)
     {
-        header("Location: mytravelapp.php");
+        header("Location: ../views/mytravelapp.php");
         exit();
     }
-    $bnbclient = new SoapClient(NULL, array('location' => "http://localhost/phpwebsrs/bnbserver.php",
+    $bnbclient = new SoapClient(NULL, array('location' => "http://localhost/phpwebsrs/libs/bnbserver.php",
                  'uri' => "urn://travel/db"));
 
     $bnbresult = $bnbclient->__soapCall("bnbsearch", array($bnb, $location, $date, $price));

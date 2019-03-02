@@ -3,7 +3,7 @@
  * skybookings.php
  * @author Brian.
  */
-include 'header.php';
+include '../views/header.php';
 $message = "Enjoy!";
 if($_REQUEST)
 {
@@ -83,9 +83,9 @@ if($_REQUEST)
 <div> 
 </div>
 <p>
-   <img src="myp2.jpg"> 
+   <img src="../myp2.jpg"> 
 </p>
 
 <?php
-include "footer.php";
+include "../views/footer.php";
 ?>

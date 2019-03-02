@@ -4,8 +4,8 @@
  * bnbserver.php
  * @author Brian.
  */
-include "dbconfig.php";
-include "dbconn.php";
+include "../configs/dbconfig.php";
+include "../configs/dbconn.php";
 
 $info = TRUE;
 

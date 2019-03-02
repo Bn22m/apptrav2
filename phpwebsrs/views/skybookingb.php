@@ -56,7 +56,7 @@ if(!isset($_REQUEST['book']))
 ?>
 
 <table>
-    <form action='skybookingc.php' method='POST'>
+    <form action='../libs/Skybooking.php' method='POST'>
     <tr><td>Name:</td>
         <td><input name="name" type="text" value="" required="true" maxlength="29"/></td>
     </tr>
@@ -92,7 +92,7 @@ if(!isset($_REQUEST['book']))
 function bd($y,$m,$d,$t,$i=0,$s=0)
 {
     $client2 = new SoapClient(null, array(
-      'location' => "http://localhost/phpwebsrs/simplesever.php",
+      'location' => "http://localhost/phpwebsrs/libs/simplesever.php",
       'uri'      => "urn://sps/sev"));
 
     $result2 = $client2->__soapCall("testd", array($y,$m,$d,$t,$i,$s));

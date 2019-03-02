@@ -9,7 +9,11 @@ define('COMPANY', 'MyTravelApp');
 
 print ('
 <html>
-<title>'.COMPANY.'</title>
+<header>    
+    <title>'.COMPANY.'</title>
+    <link rel="stylesheet" href="../public/css/main.css" />
+    
+</header>    
 <body>
 <table width=600px align="center" valign="top">
 <tr><td colspan="2"></td></tr>

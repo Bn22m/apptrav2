@@ -1,0 +1,89 @@
+/*
+    main.css
+*/
+/* 
+    Author     : Brian
+*/
+
+html, body, div, fieldset {
+    margin: 10px;
+    padding: 5px;
+    border: 10px;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+input[type="button"]:hover,
+	input[type="submit"]:hover,
+	.button:hover,
+	button:hover {
+        background-color: #000066;
+    }
+
+hr {
+		border: 0;
+        border-top: solid 2px #0000cc ;
+	}
+    
+form > div {
+        position: relative;
+    }
+        
+form.contact_us label {
+        position: absolute;
+        top: -10px;
+        bottom: 100%;
+        left: 3px;
+        transition: all 0.2s linear;
+        color: snow;
+        font-size: 12px;
+    }
+    
+form.contact_us label:hover {
+        top: 50%;
+        color: blueviolet;
+    }
+    
+input:focus + label, textarea:focus + label {
+        background-color: aqua;
+        left: 10px;
+        top: -20px;
+        bottom: 90%;
+    }
+
+input:hover + label, textarea:hover + label, output:hover {
+        margin-bottom: 1px;
+        border: 1px solid red;
+        padding: 3px 2px;
+        background-color: yellow;
+        color: red;
+        top: 80%; 
+    }
+    
+input:focus, textarea:focus {
+        color: goldenrod;
+    }
+    
+form {
+        width: 600px;
+        margin: 2em auto;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+        border: groove 12px threedface;
+    }
+    
+fieldset {
+        position: relative;
+        margin: 12px;
+        padding: 12px;
+    }
+    
+legend {
+        padding: 2px;
+    }
+    
+form.contact_us output {
+        color: blue;
+    }

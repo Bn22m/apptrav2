@@ -1,10 +1,10 @@
 <?php
 
 /*
- * forexapi.php
+ * Forexapi.php
  */
-include 'header.php';
-include ("dbconfig.php");
+include '../views/header.php';
+include ("../configs/dbconfig.php");
 /**
  * Description of forexapi
  *
@@ -19,8 +19,8 @@ if($apiapp)
 }
 else
 {
-    echo '<br><hr><p><a href="mytravelapp.php">Exit</a></p><br>';
-    header("Location: forexapitpl.php");
+    echo '<br><hr><p><a href="../views/mytravelapp.php">Exit</a></p><br>';
+    header("Location: ../views/forexapitpl.php");
     exit();
 }
 
@@ -58,7 +58,7 @@ class Forexapi
     
     function realtime()
     {
-        echo '<p><a href="skybookings.php">Exit</a></p>';
+        echo '<p><a href="../views/skybookings.php">Exit</a></p>';
         echo "Online: $this->date <br>";
         try 
         {
@@ -120,10 +120,10 @@ class Forexapi
             
     function update()
     {
-        echo '<br><hr><p><a href="mytravelapp.php">Exit</a></p><br>';
+        echo '<br><hr><p><a href="../views/mytravelapp.php">Exit</a></p><br>';
         try 
         {
-            include_once "dbconn.php";
+            include_once "../configs/dbconn.php";
             $mysqli = connDB();
             //$mysqli = new mysqli(DBHOST, DBUSER, DBPWD , DBNAME);
             //
@@ -157,4 +157,4 @@ class Forexapi
     }
 }
 
-include 'footer.php';
+include '../views/footer.php';
